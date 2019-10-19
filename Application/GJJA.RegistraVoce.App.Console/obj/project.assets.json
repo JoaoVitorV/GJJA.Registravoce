@@ -5700,11 +5700,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/season/Documentos/projects/GJJA.RegistraVoce/Application/GJJA.RegistraVoce.App.Console/GJJA.RegistraVoce.App.Console.csproj",
+      "projectUniqueName": "/home/season/Documentos/projects/GJJA.RegistraVoce.Git/Application/GJJA.RegistraVoce.App.Console/GJJA.RegistraVoce.App.Console.csproj",
       "projectName": "GJJA.RegistraVoce.App.Console",
-      "projectPath": "/home/season/Documentos/projects/GJJA.RegistraVoce/Application/GJJA.RegistraVoce.App.Console/GJJA.RegistraVoce.App.Console.csproj",
+      "projectPath": "/home/season/Documentos/projects/GJJA.RegistraVoce.Git/Application/GJJA.RegistraVoce.App.Console/GJJA.RegistraVoce.App.Console.csproj",
       "packagesPath": "/home/season/.nuget/packages/",
-      "outputPath": "/home/season/Documentos/projects/GJJA.RegistraVoce/Application/GJJA.RegistraVoce.App.Console/obj/",
+      "outputPath": "/home/season/Documentos/projects/GJJA.RegistraVoce.Git/Application/GJJA.RegistraVoce.App.Console/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/share/dotnet/sdk/NuGetFallbackFolder"
@@ -5721,17 +5721,17 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "/home/season/Documentos/projects/GJJA.RegistraVoce/1.Domain/GJJA.RegistraVoce.Domain/GJJA.RegistraVoce.Domain.csproj": {
-              "projectPath": "/home/season/Documentos/projects/GJJA.RegistraVoce/1.Domain/GJJA.RegistraVoce.Domain/GJJA.RegistraVoce.Domain.csproj"
+            "/home/season/Documentos/projects/GJJA.RegistraVoce.Git/1.Domain/GJJA.RegistraVoce.Domain/GJJA.RegistraVoce.Domain.csproj": {
+              "projectPath": "/home/season/Documentos/projects/GJJA.RegistraVoce.Git/1.Domain/GJJA.RegistraVoce.Domain/GJJA.RegistraVoce.Domain.csproj"
             },
-            "/home/season/Documentos/projects/GJJA.RegistraVoce/2.DataAccess/GJJA.RegistraVoce.DataAccess.Entity/GJJA.RegistraVoce.DataAccess.Entity.csproj": {
-              "projectPath": "/home/season/Documentos/projects/GJJA.RegistraVoce/2.DataAccess/GJJA.RegistraVoce.DataAccess.Entity/GJJA.RegistraVoce.DataAccess.Entity.csproj"
+            "/home/season/Documentos/projects/GJJA.RegistraVoce.Git/2.DataAccess/GJJA.RegistraVoce.DataAccess.Entity/GJJA.RegistraVoce.DataAccess.Entity.csproj": {
+              "projectPath": "/home/season/Documentos/projects/GJJA.RegistraVoce.Git/2.DataAccess/GJJA.RegistraVoce.DataAccess.Entity/GJJA.RegistraVoce.DataAccess.Entity.csproj"
             },
-            "/home/season/Documentos/projects/GJJA.RegistraVoce/3.Repository/GJJA.RegistraVoce.Repository.Entity/GJJA.RegistraVoce.Repository.Entity.csproj": {
-              "projectPath": "/home/season/Documentos/projects/GJJA.RegistraVoce/3.Repository/GJJA.RegistraVoce.Repository.Entity/GJJA.RegistraVoce.Repository.Entity.csproj"
+            "/home/season/Documentos/projects/GJJA.RegistraVoce.Git/3.Repository/GJJA.RegistraVoce.Repository.Entity/GJJA.RegistraVoce.Repository.Entity.csproj": {
+              "projectPath": "/home/season/Documentos/projects/GJJA.RegistraVoce.Git/3.Repository/GJJA.RegistraVoce.Repository.Entity/GJJA.RegistraVoce.Repository.Entity.csproj"
             },
-            "/home/season/Documentos/projects/GJJA.RegistraVoce/3.Repository/GJJA.Repository.Common/GJJA.Repository.Common.csproj": {
-              "projectPath": "/home/season/Documentos/projects/GJJA.RegistraVoce/3.Repository/GJJA.Repository.Common/GJJA.Repository.Common.csproj"
+            "/home/season/Documentos/projects/GJJA.RegistraVoce.Git/3.Repository/GJJA.Repository.Common/GJJA.Repository.Common.csproj": {
+              "projectPath": "/home/season/Documentos/projects/GJJA.RegistraVoce.Git/3.Repository/GJJA.Repository.Common/GJJA.Repository.Common.csproj"
             }
           }
         }
