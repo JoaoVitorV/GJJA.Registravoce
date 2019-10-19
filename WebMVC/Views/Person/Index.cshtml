@@ -1,0 +1,43 @@
+@model ListPersonModel
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>*** Bem Vindo! ***</h2>
+
+<p>O que voçê deseja fazer?</p>
+
+<p>Listar Pessoas</p>
+<p>Inserir Pessoas</p>
+<p>Atualizar Pessoas</p>
+<p><strong>Deletar Pessoas</strong></p>
+<table border="2" style="width:100% ">
+   <tr>
+       <th>ID</th>
+       <th>Nome</th>
+       <th>Gênero</th>
+       <th>RG</th>
+       <th>CPF</th>
+       <th>Nascimento</th>
+       <th>Estado Civil</th>
+       <th>Endereço</th>
+       <th>Telefone</th>
+       <th>EXCLUIR</th>
+   </tr>
+   @foreach(var person in Model.Lista)
+   {
+       <tr>
+            <td>@person.Id</td>
+            <td>@person.Name</td>
+            <td>@person.Gender</td>
+            <td>@person.DocumentNumber</td>
+            <td>@person.Identification</td>
+            <td>@person.BirthDate</td>
+            <td>@person.MeritalStatus</td>
+            <td>@person.Address</td>
+            <td>@person.Phone</td> 
+            <td style="color:red ; text-align:center"><strong>X</strong></td>  
+       </tr>
+   }
+</table>
+<p><strong>Contar Pessoas: </strong>@Model.Lista.Count()</p>
