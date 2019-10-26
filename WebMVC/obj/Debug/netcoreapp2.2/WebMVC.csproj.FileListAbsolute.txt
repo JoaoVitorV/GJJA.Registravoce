@@ -84,3 +84,5 @@
 /home/season/Documentos/projects/GJJA.RegistraVoce.Git/WebMVC/obj/Debug/netcoreapp2.2/WebMVC.csproj.CopyComplete
 /home/season/Documentos/projects/GJJA.RegistraVoce.Git/WebMVC/obj/Debug/netcoreapp2.2/WebMVC.dll
 /home/season/Documentos/projects/GJJA.RegistraVoce.Git/WebMVC/obj/Debug/netcoreapp2.2/WebMVC.pdb
+/home/season/Documentos/projects/GJJA.RegistraVoce.Git/WebMVC/obj/Debug/netcoreapp2.2/Razor/Views/Person/Create.g.cshtml.cs
+/home/season/Documentos/projects/GJJA.RegistraVoce.Git/WebMVC/obj/Debug/netcoreapp2.2/Razor/Views/Person/Edit.g.cshtml.cs

@@ -1,17 +1,21 @@
 @model ListPersonModel
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Person Page";
 }
 
-<h2>*** Bem Vindo! ***</h2>
+<h2>*** Person Page! ***</h2>
 
 <p>O que voçê deseja fazer?</p>
 
-<p>Inserir Pessoas</p>
-<p>Atualizar Pessoas</p>
+
 <table border="2" style="width:100% ">
     <tr style="text-align:center; background-color:beige">  
-        <th>  @Html.ActionLink("Inserir Pessoa", "InsertPerson", "Person")</th>
+<strong>
+        <th>
+             <strong>
+                @Html.ActionLink("Create Person","Create","Person")
+             </strong>  
+        </th>
 
     </tr>
    <tr style="text-align:center; background-color:red">
@@ -44,7 +48,7 @@
             <td>@person.Phone</td> 
             <td style="text-align:center">
                 <strong>
-                    @Html.ActionLink("EDITAR", "EditPerson", "Person", new {personId = person.Id})
+                    @Html.ActionLink("!", "Edit", "Person", new {personId = person.Id})
                 </strong>
             </td> 
             <td style="text-align:center">
@@ -57,53 +61,6 @@
    }
         <tr style="background-color:beige">
            <th><strong>Total de Pessoas => </strong>@Model.Lista.Count()</th>
-       </tr>
-   }
-   @Html.HiddenFor(model => model.EditPerson.Id)
-</table>
-</br>
-<table>
-    <tr>
-        <th>Nome :</th> 
-            <td>@Html.EditorFor(model => model.EditPerson.Name)</td>
-        <th>Gênero :</th> 
-            <td>@Html.EditorFor(model => model.EditPerson.Gender)
-                <!-- <select>
-                    <option value="0">Masculino</option>
-                    <option value="1">Feminino</option>
-                    <option value="2">Indefinido</option>
-                </select> -->
-            </td>
-    </tr>
-    <tr>
-        <th>RG :</th> 
-            <td>@Html.EditorFor(model => model.EditPerson.DocumentNumber)</td>
-        <th>CPF :</th> 
-            <td>@Html.EditorFor(model => model.EditPerson.Identification)</td>
-    </tr>
-    <tr>
-        <th>Nascimento :</th> 
-            <td>@Html.EditorFor(model => model.EditPerson.BirthDate)</td>
-        <th>Estado Civil :</th> 
-        <td>@Html.EditorFor(model => model.EditPerson.MeritalStatus)</td>
-             <!-- <select>
-                    <option value="0">Solteiro</option>
-                    <option value="1">Casado</option>
-                    <option value="2">Divorciado</option>
-                    <option value="3">Viuvo</option>
-             </select> -->
-        </td>
-    </tr>
-    <tr>
-        <th>Endereço :</th> 
-            <td>@Html.EditorFor(model => model.EditPerson.Address)</td>
-        <th>Telefone :</th> 
-            <td>@Html.EditorFor(model => model.EditPerson.Phone)</td>
-    </tr>
-    <tr>
-        <td>@Html.ActionLink("Inserir", "InsertPerson", "Person")</td>
-        <td>@Html.ActionLink("Atualizar", "UpdatePerson", "Person")</td>
-    </tr>
-
-   
+        </tr>
+   }   
 </table>

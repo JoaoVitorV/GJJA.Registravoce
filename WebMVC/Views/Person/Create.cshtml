@@ -1,0 +1,57 @@
+@model PersonModel
+@using GJJA.RegistraVoce.Domain.Enums
+@{
+    ViewData["Title"] = "Create Page";
+}
+
+<h2>*** Create Person Page! ***</h2>
+
+<p>O que voçê deseja fazer?</p>
+
+<strong>
+    @Html.ActionLink("List all","Create","Person")
+</strong>
+@using (Html.BeginForm("Insert", "Person", FormMethod.Post))
+{
+<table>
+    <tr style="text-align:center; background-color:red">
+    <th>Parâmeter</th>
+    <th>Value</th>
+    </tr>
+    <tr>
+        <td>Name</td>
+        <td>@Html.EditorFor(m => m.Name)</td>
+    </tr>
+    <tr>
+        <td>Gender</td>
+        <td>@Html.DropDownListFor(m => m.Gender, new SelectList(Enum.GetValues(typeof(Gender))))
+        </td>
+    </tr>
+    <tr>
+        <td>DocumentNumber</td>
+        <td>@Html.EditorFor(m => m.DocumentNumber)</td>
+    </tr>
+    <tr>
+        <td>Identification</td>
+        <td>@Html.EditorFor(m => m.Identification)</td>
+    </tr>
+    <tr>
+        <td>BirthDate</td>
+        <td>@Html.EditorFor(m => m.BirthDate)</td>
+    </tr>
+    <tr>
+        <td>Marital Status</td>
+        <td>@Html.DropDownListFor(m => m.MeritalStatus, new SelectList(Enum.GetValues(typeof(MeritalStatus))))
+        </td>
+    </tr>
+    <tr>
+        <td>Address</td>
+        <td>@Html.EditorFor(m => m.Address)</td>
+    </tr>
+    <tr>
+        <td>Phone</td>
+        <td>@Html.EditorFor(m => m.Phone)</td>
+    </tr>
+</table>
+<input type="submit" value="Save Person"/>
+}
